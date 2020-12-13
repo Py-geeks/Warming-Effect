@@ -41,6 +41,7 @@ img = cv2.imread("cat.png")
 3.Create and set Lookup Table of both channels.<br>
 4.Split the channels.<br>
 5.Apply Lookuptable-mapping into both channels.<br>
+6.For desired output merge the channels. 
 
 ## Step-1:
 ```python
@@ -65,19 +66,10 @@ blueLookupTable = np.interp(allValues, originalValues, blueValues)
 ```
 ## Step-4:
 ```python
-#create lookup table for red channel
-allValues = np.arange(0, 256)
-redLookupTable = np.interp(allValues, originalValues, redValues)
-
-#create lookup table for blue channel
-blueLookupTable = np.interp(allValues, originalValues, blueValues)
-```
-## Step-5:
-```python
 #split into channels
 B, G, R = cv2.split(result)
 ```
-## Step-6:
+## Step-5:
 ```python
 #apply mapping to red channel
 R = cv2.LUT(R, redLookupTable)
@@ -87,7 +79,7 @@ R = np.uint8(R)
 B = cv2.LUT(B, blueLookupTable)
 B = np.uint8(B)
 ```
-## Step-7:
+## Step-6:
 ```python
 #mege the channels
 result = cv2.merge([B, G, R])
