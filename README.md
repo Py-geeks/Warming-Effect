@@ -110,7 +110,7 @@ cv2.destroyAllWindows()
 ## Images
 <p align="center">
 	<img src="cat.png" alt="Original png", height=250px,width=350px>
-	<img src="gussianblur.PNG" alt="Blured", height=250px,width=340px>
+	<img src="warming.PNG" alt="Blured", height=250px,width=340px>
 </p>
 
 ### Developed by
