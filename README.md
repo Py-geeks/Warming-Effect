@@ -92,7 +92,8 @@ B = np.uint8(B)
 #mege the channels
 result = cv2.merge([B, G, R])
 ```
-# Now we are going to apply a new concepts of windows to display images.
+# Now we are going to apply windows to display images.
+Windows are used to manipulate out-put screen or screens to b displayed.
 ```python
 #create windows to display images
 cv2.namedWindow("image", cv2.WINDOW_NORMAL)
