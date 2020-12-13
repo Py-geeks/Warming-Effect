@@ -36,11 +36,11 @@ img = cv2.imread("cat.png")
 ```
 
 ## Steps to be followed:
-1.First create a copy of the image to work on.
-2.Set original x & y-axis values.
-3.Create and set Lookup Table of both channels.
-4.Split the channels
-5.Apply Lookuptable-mapping into both channels.
+1.First create a copy of the image to work on.<br>
+2.Set original x & y-axis values.<br>
+3.Create and set Lookup Table of both channels.<br>
+4.Split the channels.<br>
+5.Apply Lookuptable-mapping into both channels.<br>
 
 ## Step-1:
 ```python
